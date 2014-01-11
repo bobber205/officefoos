@@ -84,7 +84,7 @@ angular.module('homepage', [])
     return {
       angular: '<script src="https://ajax.googleapis.com/ajax/libs/angularjs/' + angular.version.full + '/angular.min.js"></script>\n',
       resource: '<script src="https://ajax.googleapis.com/ajax/libs/angularjs/' + angular.version.full + '/angular-resource.min.js"></script>\n',
-      firebase: '<script src="https://cdn.firebase.com/v0/firebase.js"></script>\n    <script src="http://firebase.github.io/angularFire/angularFire.js"></script>\n'
+      firebase: '<script src="https://cdn.firebase.com/v0/firebase.js"></script>\n    <script src="https://cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>\n'
     };
   })
 
@@ -306,8 +306,8 @@ angular.module('homepage', [])
   })
 
     .controller('DownloadCtrl', function($scope, $location) {
-      $scope.CURRENT_STABLE_VERSION = '1.2.0';
-      $scope.CURRENT_UNSTABLE_VERSION = '1.2.0';
+      $scope.CURRENT_STABLE_VERSION = '1.2.8';
+      $scope.CURRENT_UNSTABLE_VERSION = '1.2.8';
       var BASE_CODE_ANGULAR_URL = 'http://code.angularjs.org/';
       var BASE_CDN_URL = 'https://ajax.googleapis.com/ajax/libs/angularjs/';
       var getRelativeUrl = function(branch, build) {
